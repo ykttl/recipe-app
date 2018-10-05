@@ -4,15 +4,27 @@
     <title>Recipe App</title>
 </head>
 <body>
-   <input type="text" id="title">
-   <textarea id="desc"></textarea>
+    <div>
+        <h2>Recipe</h2>
+        <input type="text" id="title" placeholder="recipe title">
+        <textarea id="disc" placeholder="how to make?"></textarea>       
+    </div>
 
-   <button id="save">save</button>
-   <button id="delete">delete</button>
+    <div>
+        <h3>Ingredients</h3>
+        <div id="ingredientsBox"></div>
+        <button id="addIngredients">Add Ingredients!</button>
+        <input type="text" id="textIngredients">
+    </div>
+
+<br>
+<br>
+<br>
+        <button id="save">save</button>
+        <button id="delete">delete</button>
     
-   <script src="uuid.js"></script>
-    <script src="func.js"></script>
-    <script src="edit.js"></script>
-    
+
+<script src="func.js"></script>
+<script src="edit.js"></script>  
 </body>
 </html>
