@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background:#ddd url(food.jpg) no-repeat center center;
+background-size:cover;
+
+  }
+
+/* header */
+
+.header {
+    background:rgba(0,0,0,0.6);
+    padding: 1.6rem 0;
+}
+
+.header__title {
+    color: white;
+    opacity:1.0;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;ß
+    
+}
+
+/* container */
+
+.container{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+.editPage {
+    background:  rgba(255,255,255,0.7);
+    width: 700px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* serach_box */
+
+.search_box { 
+   padding-top: 30px; 
+  
+}
+
+#search {
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* recipe-box */
+.recipe_box{
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 30px;
+ 　
+}
+
+/* button */
+.button_box {
+    padding-top: 20px;
+}
+
+.button {
+    font: 1rem 'Fira Sans', sans-serif;
+    padding: 15px;
+    background: #86d1f0;
+    border: none;
+    border-radius: 4px;
+    margin: 4px;
+    width: 200px;
+    margin: 0 30 0 30px;
+    
+
+}
+
+/* edit - box */
+
+.input {
+    display: block;
+    margin: 0 auto;
+   
+}
+
+#title {
+    width: 600px;
+    height: 40px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#disc {
+    width: 600px;
+    height: 150px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#textIngredients {
+    width: 300px;
+    height: 40px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#addIngredients {
+   
+    padding: 8px;
+    background: #86d1f0;
+    border: none;
+    border-radius: 4px;
+    margin: 4px;
+    font-size: 14px;
+}
+
+#save {
+    background: green;
+    color: white;
+}
+
+#delete {
+    background: red;
+}
+
+h3 {
+    margin: 20px;
+}
+
+
+.input_inline {
+     display: inline;
+}
+
+.recipeDiv {
+   
+    background:rgba(255,255,255,0.8);
+    width: 450px;
+    height: 45px;
+    margin: 0 auto;
+    padding: 5px;
+    
+}
+
+
+#ingEl {
+   
+    background:rgba(255, 255, 255, 0.8);
+    width: 600px;
+    height: 40px;
+    margin: 0 auto ;
+    padding: 10px; 
+    text-align: left;
+   
+
+}
+
+#xEl {
+    padding: 5px;
+    width: 30px;
+    margin-left: 10px;
+    float: right;
+}
+
+a {
+    color: gray;
+    font-size: 22px;
+    text-decoration: none ;
+   
+}
+
+.box_Ingredients {
+    margin: 30px;
+}
