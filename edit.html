@@ -7,10 +7,10 @@
 <body>
     <div>
         <header class="header">
-            <h1 class="header__title">Recipe App</h1>
+            <h1 class="header__title">Recipe Note</h1>
         </header> 
 
-        <div class="container">
+        <div class="container editPage">
             <p id="lastEdited"></p>
 
             <div class="box box_recipe">
@@ -22,16 +22,14 @@
             <div class="box box_ingredients">
                 <h3>Ingredients</h3>
                 <div id="ingredientsBox" ></div>
-            
-                    <input type="text" id="textIngredients" class="input_inline">
+                    <input type="text" id="textIngredients" class="input_inline" placeholder="ingredients">
                     <button id="addIngredients" class="input_inline">Add Ingredients!</button>
-               
-             
             </div>
             
             <div class="button_box">
-                <button id="save" class="button">save</button>
-                <button id="delete" class="button">delete</button>
+                <button id="delete" class="button">Delete</button>
+                <button id="save" class="button">Save</button>
+                
             </div>
         </div>
     
