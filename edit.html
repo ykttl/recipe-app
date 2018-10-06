@@ -2,29 +2,41 @@
 <html>
 <head>
     <title>Recipe App</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div>
-        <h2>Recipe</h2>
-        <input type="text" id="title" placeholder="recipe title">
-        <textarea id="disc" placeholder="how to make?"></textarea>       
-    </div>
+        <header class="header">
+            <h1 class="header__title">Recipe App</h1>
+        </header> 
 
-    <div>
-        <h3>Ingredients</h3>
-        <div id="ingredientsBox"></div>
-        <button id="addIngredients">Add Ingredients!</button>
-        <input type="text" id="textIngredients">
-    </div>
+        <div class="container">
+            <p id="lastEdited"></p>
 
-<br>
-<br>
-<br>
-        <button id="save">save</button>
-        <button id="delete">delete</button>
+            <div class="box box_recipe">
+                 <h3>Recipe</h3>
+                <input type="text" id="title" placeholder="recipe title" class="input　title_input">
+                <textarea id="disc" placeholder="how to make?" class="input disc_input"></textarea> 
+            </div>
+           
+            <div class="box box_ingredients">
+                <h3>Ingredients</h3>
+                <div id="ingredientsBox" ></div>
+            
+                    <input type="text" id="textIngredients" class="input_inline">
+                    <button id="addIngredients" class="input_inline">Add Ingredients!</button>
+               
+             
+            </div>
+            
+            <div class="button_box">
+                <button id="save" class="button">save</button>
+                <button id="delete" class="button">delete</button>
+            </div>
+        </div>
     
-
-<script src="func.js"></script>
-<script src="edit.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+<script src="scripts/func.js"></script>
+<script src="scripts/edit.js"></script>  
 </body>
 </html>

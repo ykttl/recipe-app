@@ -2,18 +2,26 @@
 <html>
 <head>
     <title>Recipe App</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
-<body>    
-    <h1>Recipe App</h1>
+<body>   
+    <header class="header"> 
+         <h1 class="header__title">Recipe App</h1>      
+    </header> 
 
-    <input type="text" placeholder="search!" id="search">
-    
-    <div id="box"></div>
-
-    <button id="add">Add Receipe!</button>
-
-<script src="uuid.js"></script>
-<script src="func.js"></script>
-<script src="app.js"></script>    
+    <div class="container">
+        <div class="search_box">
+            <input type="text" placeholder="Search Your Recipes!" id="search">
+        </div> 
+        <div id="box" class="recipe_box"></div>
+        <div class="button_box">
+            <button id="add" class="button">Add Receipe</button>
+        </div>
+    </div>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+<script src="scripts/uuid.js"></script>
+<script src="scripts/func.js"></script>
+<script src="scripts/app.js"></script>    
 </body>
 </html>
