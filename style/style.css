@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Hammersmith+One|Lobster|Lobster+Two');
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/*== body ==*/
+
 body {
-    
     background:#ddd url(food.jpg) no-repeat center center;
-background-size:cover;
+    background-size:cover;
+}
 
-  }
-
-/* header */
+/*== header ==*/
 
 .header {
     background:rgba(0,0,0,0.6);
@@ -23,31 +26,33 @@ background-size:cover;
     opacity:1.0;
     width: 300px;
     margin: 0 auto;
-    text-align: center;ß
-    
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 45px;
+
 }
 
-/* container */
+/*== container ==*/
 
-.container{
+.container {  
+    /* index.html & edit.html */
     width: 700px;
     margin: 0 auto;
     text-align: center;
-   
 }
 
-.editPage {
+.editPage { 
+    /* edit.html */
     background:  rgba(255,255,255,0.7);
     width: 700px;
     margin-top: 20px;
     padding: 10px;
 }
 
-/* serach_box */
+/*== serach ==*/
 
-.search_box { 
+.box_search { 
    padding-top: 30px; 
-  
 }
 
 #search {
@@ -58,38 +63,97 @@ background-size:cover;
     border-radius: 8px;
 }
 
-/* recipe-box */
-.recipe_box{
+/*== recipe elem in index.html ==*/
+
+.box_recipe {
     width: 600px;
     margin: 0 auto;
-    padding-top: 30px;
- 　
+    padding-top: 10px;
 }
 
-/* button */
-.button_box {
+.recipeDiv {
+    background: rgba(255, 255, 255, 0.7);
+    width: 450px;
+    height: 45px;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-overflow: ellipsis; 
+    white-space: nowrap;     
+    overflow: hidden;     
+}
+
+.recipeDiv:hover {
+    background:rgba(242, 165, 64, 0.82);
+    color: black;
+}
+
+a {
+    color: gray;
+    font-size: 22px;
+    text-decoration: none ;
+}
+
+/*== button ==*/
+
+.box_button{
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .button {
     font: 1rem 'Fira Sans', sans-serif;
     padding: 15px;
-    background: #86d1f0;
     border: none;
     border-radius: 4px;
     margin: 4px;
     width: 200px;
     margin: 0 30 0 30px;
-    
-
 }
 
-/* edit - box */
+#add {
+    background: #86d1f0;
+}
+
+#save {
+    background: green;
+    color: white;
+}
+
+#delete {
+    background: red;
+}
+
+#addIngredients {
+    padding: 8px;
+    font-size: 14px;
+    margin-left: 4px;
+    width: 100px;
+    background:gray;
+}
+
+/*==  edit.html ==*/
+
+h2 {
+    margin: 20px;
+}
+
+#lastEdited {
+    padding-top: 10px;
+}
+
+/*==  title & discription  ==*/
+
+.box_title_disc {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
 
 .input {
     display: block;
-    margin: 0 auto;
-   
+    margin: 0 auto;  
 }
 
 #title {
@@ -108,6 +172,17 @@ background-size:cover;
     font-size: 16px;
 }
 
+
+/*== ingredients ==*/
+
+.input_inline {
+     display: inline;
+}
+
+.box_Ingredients {
+    margin: 30px;
+} 
+
 #textIngredients {
     width: 300px;
     height: 40px;
@@ -116,45 +191,6 @@ background-size:cover;
     font-size: 16px;
 }
 
-#addIngredients {
-   
-    padding: 8px;
-    background: #86d1f0;
-    border: none;
-    border-radius: 4px;
-    margin: 4px;
-    font-size: 14px;
-}
-
-#save {
-    background: green;
-    color: white;
-}
-
-#delete {
-    background: red;
-}
-
-h3 {
-    margin: 20px;
-}
-
-
-.input_inline {
-     display: inline;
-}
-
-.recipeDiv {
-   
-    background:rgba(255,255,255,0.8);
-    width: 450px;
-    height: 45px;
-    margin: 0 auto;
-    padding: 5px;
-    
-}
-
-
 #ingEl {
    
     background:rgba(255, 255, 255, 0.8);
@@ -162,9 +198,8 @@ h3 {
     height: 40px;
     margin: 0 auto ;
     padding: 10px; 
-    text-align: left;
-   
-
+    text-align: left; 
+    margin-bottom: 7px;
 }
 
 #xEl {
@@ -174,13 +209,3 @@ h3 {
     float: right;
 }
 
-a {
-    color: gray;
-    font-size: 22px;
-    text-decoration: none ;
-   
-}
-
-.box_Ingredients {
-    margin: 30px;
-}
