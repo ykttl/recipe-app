@@ -10,15 +10,13 @@ let data = getData()
 let hashId = location.hash.substring(1)
 let recipe = data.find((recipe) => recipe.id === hashId)
 const generateTime = (timestamp) => `Last edited on: ${moment(timestamp).format('MMM-DD-YY  H:mm ')}`
+
 titleInput.value = recipe.title
 discInput.value = recipe.disc
- lastEdited.textContent = generateTime((recipe.editedAt))
-
-
+lastEdited.textContent = generateTime((recipe.editedAt))
 
 titleInput.addEventListener('input', (e) => {
     recipe.title = e.target.value
-    console.log(recipe.title) 
     recipe.editedAt = moment().valueOf() 
     saveData(data)
    
@@ -26,7 +24,6 @@ titleInput.addEventListener('input', (e) => {
 
 discInput.addEventListener('input', (e) => {
     recipe.disc = e.target.value
-    console.log(recipe.disc) 
     recipe.editedAt = moment().valueOf() 
     saveData(data)
    

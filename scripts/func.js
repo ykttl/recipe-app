@@ -1,7 +1,6 @@
 
-const getData = ()=> {
+const getData = () => {
     const recipeJSON = localStorage.getItem('recipes')
-
     try {
         return recipeJSON ? JSON.parse(recipeJSON) : []
     } catch (e) {
@@ -46,7 +45,7 @@ const renderRecipe = (data) => {
 }
 
 const filterRender = (data, filterWord) => {
-    const filteredData =  data.filter((x) => x.title.includes(filterWord)) 
+    const filteredData =  data.filter((x) => x.title.toLowerCase().includes(filterWord.toLowerCase())) 
     const recipeList = document.querySelector('#recipeList')
       
      recipeList.innerHTML = ''

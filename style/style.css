@@ -12,6 +12,7 @@
 body {
     background:#ddd url(food.jpg) no-repeat center center;
     background-size:cover;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 /*== header ==*/
@@ -55,12 +56,21 @@ body {
    padding-top: 30px; 
 }
 
+input {
+    font-family: FontAwesome;
+}
 #search {
     width: 350px;
     height: 40px;
     font-size: 16px;
     text-align: center;
     border-radius: 8px;
+    /* font-family: 'Hammersmith One', sans-serif; */
+
+}
+.fontawesome {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 
 /*== recipe elem in index.html ==*/
@@ -95,6 +105,10 @@ a {
     text-decoration: none ;
 }
 
+p {
+    padding-top: 5px;
+}
+
 /*== button ==*/
 
 .box_button{
@@ -103,13 +117,15 @@ a {
 }
 
 .button {
-    font: 1rem 'Fira Sans', sans-serif;
+    font-size: 20px;
     padding: 15px;
     border: none;
     border-radius: 4px;
     margin: 4px;
     width: 200px;
     margin: 0 30 0 30px;
+    font-family: 'Hammersmith One', sans-serif;
+
 }
 
 #add {
@@ -154,6 +170,8 @@ h2 {
 .input {
     display: block;
     margin: 0 auto;  
+    font-family: 'Hammersmith One', sans-serif;
+
 }
 
 #title {
@@ -189,6 +207,8 @@ h2 {
     margin-top: 15px;
     padding: 10px;
     font-size: 16px;
+    font-family: 'Hammersmith One', sans-serif;
+
 }
 
 #ingEl {
