@@ -159,9 +159,9 @@ h2 {
     padding-top: 10px;
 }
 
-/*==  title & discription  ==*/
+/*==  title & description  ==*/
 
-.box_title_disc {
+.box_title_description {
     width: 600px;
     margin: 0 auto;
     padding-top: 10px;
@@ -182,7 +182,7 @@ h2 {
     font-size: 16px;
 }
 
-#disc {
+#description {
     width: 600px;
     height: 150px;
     margin-top: 15px;

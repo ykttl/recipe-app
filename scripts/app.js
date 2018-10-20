@@ -8,7 +8,7 @@ document.querySelector('#add').addEventListener('click', () =>{
     const id = uuidv4()
     data.push({
         title: '',
-        disc: '',
+        description: '',
         ingredients: [],
         createdAt: timestamp,
         editedAt: timestamp,

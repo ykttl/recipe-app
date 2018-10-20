@@ -1,7 +1,7 @@
 /// recipe ///
 
 const titleInput = document.querySelector('#title')
-const discInput = document.querySelector('#disc')
+const descInput = document.querySelector('#description')
 const saveButton = document.querySelector('#save')
 const deleteButton = document.querySelector('#delete')
 const lastEdited = document.querySelector('#lastEdited')
@@ -12,7 +12,7 @@ let recipe = data.find((recipe) => recipe.id === hashId)
 const generateTime = (timestamp) => `Last edited on: ${moment(timestamp).format('MMM-DD-YY  H:mm ')}`
 
 titleInput.value = recipe.title
-discInput.value = recipe.disc
+descInput.value = recipe.description
 lastEdited.textContent = generateTime((recipe.editedAt))
 
 titleInput.addEventListener('input', (e) => {
@@ -22,8 +22,8 @@ titleInput.addEventListener('input', (e) => {
    
 })
 
-discInput.addEventListener('input', (e) => {
-    recipe.disc = e.target.value
+descInput.addEventListener('input', (e) => {
+    recipe.description = e.target.value
     recipe.editedAt = moment().valueOf() 
     saveData(data)
    
